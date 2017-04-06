@@ -44,7 +44,6 @@ trait KeyBuilderTrait
     protected function getKeyParts($data, $localeName)
     {
         return [
-            Store::getInstance()->getStoreName(),
             $localeName,
             $this->getBundleName(),
             $this->buildKey($data),
